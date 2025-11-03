@@ -6,7 +6,6 @@ One folder per quest. No copy-paste solutions; each quest has a clear DoD.
 ## Struture
 - `Q1-DotenvGuard` → the quest folder (spec + later code)
 - More quests: add more folders at the repo root
--
 
 ## How to use
 1) Write/adjust the spec (`SPEC_IO.md`) first.
