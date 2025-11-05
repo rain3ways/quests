@@ -38,9 +38,17 @@ for raw in e:
 e.close()
 
 missing = (example_keys - env_keys)
+extra = sorted(env_keys - example_keys)
+ok = sorted (env_keys & example_keys)
 
 print("MISSING")
 for k in missing:
     print(" " + k)
-
+print ("EXTRA")
+for k in extra:
+    print(" " + k)
+print ("OK")
+for k in ok:
+    print(" " + k)
 sys.exit(1 if missing else 0)
+
