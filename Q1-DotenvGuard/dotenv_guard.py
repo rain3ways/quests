@@ -10,32 +10,29 @@ Keys are case-sensitive.
 """
 
 example_keys = set()
-f = open(".env.example", "r", encoding="utf-8")
-for raw in f:
-    line = raw.strip()
-    if not line or line.startswith("#"):
-        continue
-    if "=" not in line:
-        continue
-    key = line.split("=", 1)[0].strip()
-    if key:
-        example_keys.add(key)
-f.close()
-
+with open(".env.example", "r", encoding="utf-8") as f:
+    for raw in f:
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        if "=" not in line:
+            continue
+        key = line.split("=", 1)[0].strip()
+        if key:
+            example_keys.add(key)
 
 env_keys = set()
 
-e = open(".env", "r", encoding="utf-8")
-for raw in e:
-    line = raw.strip()
-    if not line or line.startswith("#"):
-        continue
-    if "=" not in line:
-        continue
-    key = line.split("=", 1)[0].strip()
-    if key:
-        env_keys.add(key)
-e.close()
+with open(".env", "r", encoding="utf-8") as e:
+    for raw in e:
+        line = raw.strip()
+        if not line or line.startswith("#"):
+            continue
+        if "=" not in line:
+            continue
+        key = line.split("=", 1)[0].strip()
+        if key:
+            env_keys.add(key)
 
 missing = (example_keys - env_keys)
 extra = sorted(env_keys - example_keys)
