@@ -36,3 +36,8 @@ Notes:
 - Sections are printed in order: MISSING, EXTRA, OK.
 - Keys are sorted A→Z within each section.
 - Exit code: 1 if there is any MISSING or EXTRA, otherwise 0.
+
+## Makefile usage
+- `make run` - run the script with default paths.
+- `make test` - expects non-zero exit when `.env` is missing keys or has extras.
+- `make test-ok` - expects zero exit when `.env.ok` contains all required keys (optional).
