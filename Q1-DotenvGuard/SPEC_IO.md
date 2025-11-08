@@ -43,7 +43,7 @@ OK
     PORT
     SECRET_KEY
 - Example (strict mode):
-MISSING 
+MISSING
     DATABASE_URL
 EXTRA
     DEBUG_TOOLBAR
@@ -129,4 +129,3 @@ DIFF
 - `SPEC_IO.md` exists with all sections above.
 - Contains at least one concrete sample input/output (Section 7)
 - Ready to commit under `quests/Q1-DotenvGuard`.
-

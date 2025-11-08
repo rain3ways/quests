@@ -13,7 +13,7 @@ See SPEC_IO.md §7
 
 ## Roadmap
 Week 1: parser; Week 2: reporter; Week 3: CI and fixtures.
- 
+
 ## Expected Output (loose mode)
 
 Given:
