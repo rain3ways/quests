@@ -41,3 +41,12 @@ Notes:
 - `make run` - run the script with default paths.
 - `make test` - expects non-zero exit when `.env` is missing keys or has extras.
 - `make test-ok` - expects zero exit when `.env.ok` contains all required keys (optional).
+
+## Demo: docker compose up (short GIF)
+<img src="docs/docker-up.gif" width="720" alt="docker compose up demo">
+
+```bash
+docker compose up
+# Ctrl+C to stop
+docker compose down
+```
