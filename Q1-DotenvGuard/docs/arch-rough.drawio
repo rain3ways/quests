@@ -1,0 +1,171 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.8 Chrome/140.0.7339.240 Electron/38.4.0 Safari/537.36" version="28.2.8">
+  <diagram name="Page-1" id="d7mUzwSdRjJUV5A6hELV">
+    <mxGraphModel dx="2934" dy="2352" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="53AWseCTqQnPtb4xcRmU-5" value="AWS Cloud" style="swimlane;whiteSpace=wrap;html=1;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;flipH=1;flipV=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="-30" width="320" height="630" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-54" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="53AWseCTqQnPtb4xcRmU-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="168" y="378" as="sourcePoint" />
+            <mxPoint x="168" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-20" value="VPC (public/private subnets)" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-5">
+          <mxGeometry x="10" y="40" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-21" value="ALB (HTTP/HTTPS)" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-5">
+          <mxGeometry x="10" y="243" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-22" value="EC2 (Flask API container)" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-5">
+          <mxGeometry x="10" y="310" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-23" value="RDS (PostgreSQL)" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-5">
+          <mxGeometry x="10" y="378" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-24" value="S3 (assets/backups)" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-5">
+          <mxGeometry x="10" y="445" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-25" value="CloudWatch (logs/metrics)" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-5">
+          <mxGeometry x="10" y="513" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-26" value="Route 53&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-5">
+          <mxGeometry x="10" y="175" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-27" value="IAM (least privilege)" style="rounded=0;whiteSpace=wrap;html=1;flipV=0;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-5">
+          <mxGeometry x="10" y="580" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-42" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="53AWseCTqQnPtb4xcRmU-5" source="53AWseCTqQnPtb4xcRmU-21" target="53AWseCTqQnPtb4xcRmU-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="160" as="sourcePoint" />
+            <mxPoint x="230" y="110" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-43" value="traffic" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53AWseCTqQnPtb4xcRmU-42">
+          <mxGeometry x="-0.1319" y="2" relative="1" as="geometry">
+            <mxPoint x="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-44" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=none;startFill=0;" edge="1" parent="53AWseCTqQnPtb4xcRmU-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="152" y="340" as="sourcePoint" />
+            <mxPoint x="152" y="378" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-45" value="app queries" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53AWseCTqQnPtb4xcRmU-44">
+          <mxGeometry x="0.1234" y="-2" relative="1" as="geometry">
+            <mxPoint x="14" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-46" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.995;entryY=0.559;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="53AWseCTqQnPtb4xcRmU-5" source="53AWseCTqQnPtb4xcRmU-22" target="53AWseCTqQnPtb4xcRmU-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="180" y="360" as="sourcePoint" />
+            <mxPoint x="230" y="310" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="325" />
+              <mxPoint x="380" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-47" value="logs/metrics" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53AWseCTqQnPtb4xcRmU-46">
+          <mxGeometry x="-0.0221" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-49" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="53AWseCTqQnPtb4xcRmU-5" source="53AWseCTqQnPtb4xcRmU-26" target="53AWseCTqQnPtb4xcRmU-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="380" as="sourcePoint" />
+            <mxPoint x="210" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-50" value="DNS" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53AWseCTqQnPtb4xcRmU-49">
+          <mxGeometry x="-0.1064" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-19" value="ECR (container registry)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-5">
+          <mxGeometry x="10" y="108" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-6" value="Local Dev" style="swimlane;whiteSpace=wrap;html=1;flipH=0;fillColor=#60a917;fontColor=#ffffff;strokeColor=#2D7600;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="-30" width="320" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-12" value="VS Code + Makefile + pre-commit" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;flipV=1;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-6">
+          <mxGeometry x="10" y="30" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-13" value="dotenv-guard (env sanity)" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;flipV=1;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-6">
+          <mxGeometry x="10" y="80" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-14" value="Docker Compose (api, db, cache)" style="rounded=0;whiteSpace=wrap;html=1;flipH=1;flipV=1;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-6">
+          <mxGeometry x="10" y="130" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-7" value="GitHub &amp;amp; CI" style="swimlane;whiteSpace=wrap;html=1;fillColor=#fa6800;fontColor=#000000;strokeColor=#C73500;startSize=23;" vertex="1" parent="1">
+          <mxGeometry x="60" y="300" width="160" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-17" value="GitHub repo (main, PR)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-7">
+          <mxGeometry x="10" y="30" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-18" value="CI: GitHub Actions (lint, test, build, push image)" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="53AWseCTqQnPtb4xcRmU-7">
+          <mxGeometry x="10" y="101" width="140" height="48" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="53AWseCTqQnPtb4xcRmU-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="80" y="62" as="sourcePoint" />
+            <mxPoint x="80" y="103" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-38" value="on push / PR" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53AWseCTqQnPtb4xcRmU-37">
+          <mxGeometry x="-0.3226" y="-1" relative="1" as="geometry">
+            <mxPoint y="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-15" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="53AWseCTqQnPtb4xcRmU-6" target="53AWseCTqQnPtb4xcRmU-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-20" y="50" as="sourcePoint" />
+            <mxPoint x="570" y="52" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-16" value="git push (conventional commits)" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53AWseCTqQnPtb4xcRmU-15">
+          <mxGeometry x="0.0924" relative="1" as="geometry">
+            <mxPoint y="-8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-32" value="" style="endArrow=classic;html=1;rounded=0;dashed=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" edge="1" parent="1" target="53AWseCTqQnPtb4xcRmU-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="210" y="440.0000000000002" as="sourcePoint" />
+            <mxPoint x="430" y="440" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-35" value="Terraform apply / deploy" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53AWseCTqQnPtb4xcRmU-32">
+          <mxGeometry x="0.2695" relative="1" as="geometry">
+            <mxPoint x="-52" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-33" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;Legend&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;• Colors: Local (green), CI (orange), Cloud (blue)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;• Lines: solid = runtime traffic; dashed = deploy/provisioning (CI/Terraform)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;• Secrets: sample in .env.example; never commit .env&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="-20" y="580" width="340" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="53AWseCTqQnPtb4xcRmU-19">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="210" y="422" as="sourcePoint" />
+            <mxPoint x="420" y="80" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="407" />
+              <mxPoint x="400" y="407" />
+              <mxPoint x="400" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="53AWseCTqQnPtb4xcRmU-41" value="build &amp;amp; push image" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="53AWseCTqQnPtb4xcRmU-40">
+          <mxGeometry x="-0.0829" y="1" relative="1" as="geometry">
+            <mxPoint x="-89" y="57" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

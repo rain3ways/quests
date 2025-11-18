@@ -3,6 +3,14 @@
 ## Purpose
 Compare .env.example (template) vs .env (local) and report MISSING / EXTRA (and DIFF in --strict).
 
+## Architecture (Rough Sketch)
+High-level view from Local Dev -> Github/CI -> AWS (VPC/ALB/EC2/RDS/S3/CloudWatch/Route53/IAM).
+
+- Solid lines = runtime traffic
+- Dashed lines = CI/deploy (Terraform, image push)
+
+![Achitecture](/Q1-DotenvGuard/docs/arch-rough.png)
+
 ## Usage (I/O spec only; no impl yet)
 - Inputs: --example, --env; flags: --loose (default) | --strict, --format text|json, --dry-run
 - Outputs: section in order MISSING → EXTRA → OK (→ DIFF if --strict), A→Z sorting
